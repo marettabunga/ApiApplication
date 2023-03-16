@@ -17,11 +17,5 @@
 //     public EmployeeController(EmployeeService employeeService) {
 //         this.employeeService = employeeService;
 //     }
-    
-//     @GetMapping("employee")
-//     public ResponseEntity<Object> get(){
-//         List<Employee> employee = employeeService.get();
-//         return ResponseHandler
-//     }
 
 // }
