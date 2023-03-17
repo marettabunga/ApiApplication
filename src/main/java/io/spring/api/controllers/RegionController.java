@@ -46,7 +46,7 @@ public class RegionController {
     @PostMapping("region")
     public ResponseEntity<Object> post(@RequestBody Region region) {
         Boolean result = regionService.save(region);
-        if(result) {
+        if (result) {
             return Response.generateResponse("data berhasil tersimpan", HttpStatus.OK);
         }
         return Response.generateResponse("data gagal tersimpan", HttpStatus.BAD_REQUEST);
@@ -57,7 +57,7 @@ public class RegionController {
     @PutMapping("region")
     public ResponseEntity<Object> put(@RequestBody Region region) {
         Boolean result = regionService.save(region);
-        if(result) {
+        if (result) {
             return Response.generateResponse("data berhasil terupdate", HttpStatus.OK);
         }
         return Response.generateResponse("data gagal terupdate", HttpStatus.BAD_REQUEST);
@@ -68,9 +68,10 @@ public class RegionController {
     @DeleteMapping("region/{id}")
     public ResponseEntity<Object> put(@PathVariable(required = true) Integer id) {
         Boolean result = regionService.delete(id);
-        if(result) {
+        if (result) {
             return Response.generateResponse("data berhasil terhapus", HttpStatus.OK);
         }
         return Response.generateResponse("data gagal terhapus", HttpStatus.BAD_REQUEST);
     }
 }
+// abdu
